@@ -1,5 +1,6 @@
 function changeColor() {
-    document.querySelector('header').style.backgroundColor = 'lightgreen';
+    const randomColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+    document.querySelector('header').style.backgroundColor = randomColor;
 }
 document.getElementById('changeColor').addEventListener('click', changeColor);
 
